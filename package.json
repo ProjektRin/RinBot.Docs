@@ -1,0 +1,14 @@
+{
+    "name": "RinDocs",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "AkulaKirov <photonspk@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "vuepress": "^2.0.0-beta.43"
+    },
+    "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs"
+    }
+}
