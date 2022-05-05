@@ -8,12 +8,6 @@
 Arcaea 是 Lowiro 的注册商标。商标是其各自所有者的财产。游戏材料的版权归 Lowiro 所有。Lowiro 没有认可也不对本网站或其内容负责。
 :::
 
-:::danger
-使用本功能将违反 [Arcaea使用条款](https://arcaea.lowiro.com/zh/terms_of_service) 中的 3.2-4 和 3.2-6，以及 [Arcaea二次创作管理条例](https://arcaea.lowiro.com/zh/derivative_policy)。
-
-使用本功能将代表你已知悉并且自愿承担该风险。
-:::
-
 ## 主命令
 
 这是 Arcaea 功能的主命令，所有 Arcaea 功能都要通过它来触发。
