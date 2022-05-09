@@ -38,8 +38,7 @@ Arcaea 是 Lowiro 的注册商标。商标是其各自所有者的财产。游�
 ### 命令格式
 
 ```:no-line-numbers
-/arc bind <usercode>
-/arc bind <username>
+/arc bind <usercode/username>
 ```
 | 参数 |  名称  |  类型  |  描述  |  必要  |
 |:----:|:----:|:----:|:----:|:----:|
@@ -107,12 +106,12 @@ Arcaea 是 Lowiro 的注册商标。商标是其各自所有者的财产。游�
 ### 命令格式
 
 ```:no-line-numbers
-/arc best <song> <diff>
+/arc best <song> [<diff>]
 ```
 | 参数 |  名称  |  类型  |  描述  |  必要  |
 |:----:|:----:|:----:|:----:|:----:|
 | song |  歌曲名字  |  string  |  可以是歌曲全名、内部sid或别名  |  是  |
-| diff |  难度  |  string  |  必须是 PRS、PST、FTR、BYD 中的一个  |  是  |
+| diff |  难度  |  string  |  必须是 PRS、PST、FTR、BYD 中的一个，留空则为游玩过的最高难度  |  否  |
 
 ## 歌曲潜力值推算
 

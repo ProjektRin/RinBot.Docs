@@ -49,6 +49,14 @@ module.exports = {
                     '/command_sets/core/',
                     '/command_sets/apex',
                     '/command_sets/arcaea',
+                    '/command_sets/dingzhen',
+                    '/command_sets/loong',
+                    '/command_sets/lottery',
+                    '/command_sets/daily-sign',
+                    '/command_sets/pixiv-setu',
+                    '/command_sets/poke',
+                    '/command_sets/suan-gua',
+                    '/command_sets/tarot',
                 ]
             }, ]
         },
