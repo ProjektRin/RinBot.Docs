@@ -51,7 +51,6 @@ module.exports = {
                     '/command_sets/arcaea',
                     '/command_sets/dingzhen',
                     '/command_sets/loong',
-                    '/command_sets/lottery',
                     '/command_sets/daily-sign',
                     '/command_sets/pixiv-setu',
                     '/command_sets/poke',
