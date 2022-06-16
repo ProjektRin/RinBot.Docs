@@ -6,6 +6,8 @@ module.exports = {
     description: '多功能(?)QQ机器人',
 
     theme: defaultTheme({
+        logo: '/images/avatar.jpg',
+
         tip: '提示',
         warning: '注意',
         danger: '警告',
