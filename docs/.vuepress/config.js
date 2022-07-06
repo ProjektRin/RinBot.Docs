@@ -3,7 +3,7 @@ const { defaultTheme } = require('@vuepress/theme-default')
 module.exports = {
     lang: 'zh-CN',
     title: 'RinBot',
-    description: '多功能(?)QQ机器人',
+    description: '多功能(x) IM 机器人',
 
     theme: defaultTheme({
         logo: '/images/avatar.jpg',
@@ -18,7 +18,7 @@ module.exports = {
         notFound: [
             '你来错地方了',
             '这里是禁区',
-            '<<错误>><<错误>><<错误>>，异常的有机体侵入<<代码已损坏>>区域。'
+            '<<错误>><<错误>><<错误>>异常的有机体侵入<<代码已损坏>>区域。'
         ],
 
         navbar: [{
@@ -30,8 +30,8 @@ module.exports = {
                 link: '/guide/',
             },
             {
-                text: '命令集',
-                link: '/command_sets/',
+                text: '模块',
+                link: '/modules/',
             }
         ],
         sidebar: {
@@ -40,24 +40,19 @@ module.exports = {
                 collapsable: true,
                 children: [
                     '/guide/',
-                    '/guide/command'
+                    '/guide/command',
+                    '/guide/about'
                 ]
             }, ],
-            '/command_sets/': [{
-                text: '命令集',
+            '/modules/': [{
+                text: '模块',
                 collapsable: true,
                 children: [
-                    '/command_sets/',
-                    '/command_sets/core/',
-                    '/command_sets/apex',
-                    '/command_sets/arcaea',
-                    '/command_sets/dingzhen',
-                    '/command_sets/loong',
-                    '/command_sets/daily-sign',
-                    '/command_sets/pixiv-setu',
-                    '/command_sets/poke',
-                    '/command_sets/suan-gua',
-                    '/command_sets/tarot',
+                    '/modules/',
+                    '/modules/arcaea',
+                    '/modules/core',
+                    '/modules/interact',
+                    '/modules/sign'
                 ]
             }, ]
         },
