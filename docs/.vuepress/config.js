@@ -50,6 +50,7 @@ module.exports = {
                 children: [
                     '/modules/',
                     '/modules/arcaea',
+                    '/modules/apex',
                     '/modules/core',
                     '/modules/interact',
                     '/modules/sign'

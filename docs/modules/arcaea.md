@@ -35,20 +35,20 @@ Arcaea 是 Lowiro 的注册商标。商标是其各自所有者的财产。游�
 
 ## 绑定 Arcaea 账户
 
-将当前QQ号与一个 Arcaea 账户绑定
+将当前账号与一个 Arcaea 账户绑定
 
 ::: warning
-一个QQ号只能绑定一个 Arcaea 账户。
+一个账号只能绑定一个 Arcaea 账户。
 :::
 
 ### 命令格式
 
 ```:no-line-numbers
-/arc bind <usercode/username>
+/arc bind <userCode/username>
 ```
 | 参数 |  名称  |  类型  |  描述  |  必要  |
 |:----:|:----:|:----:|:----:|:----:|
-| usercode |  好友代码  |  string  |  需要绑定的用户的好友代码  |  是  |
+| userCode |  好友代码  |  string  |  需要绑定的用户的好友代码  |  是  |
 | username |  好友代码  |  string  |  需要绑定的用户的用户名  |  是  |
 
 :::tip
@@ -59,7 +59,7 @@ Arcaea 是 Lowiro 的注册商标。商标是其各自所有者的财产。游�
 
 ## 解绑 Arcaea 账户
 
-将当前QQ号与所绑定的 Arcaea 账户解绑
+将当前账号与所绑定的 Arcaea 账户解绑
 
 ### 命令格式
 
@@ -74,11 +74,12 @@ Arcaea 是 Lowiro 的注册商标。商标是其各自所有者的财产。游�
 ### 命令格式
 
 ```:no-line-numbers
-/arc b30 [<usercode>]
+/arc b30 [<userCode>]
 ```
+
 | 参数 |  名称  |  类型  |  描述  |  必要  |
 |:----:|:----:|:----:|:----:|:----:|
-| usercode |  好友代码  |  string  |  需要生成B30成绩图的用户的好友代码  |  否  |
+| userCode |  目标好友代码  |  string  |  需要生成最近游玩成绩图的用户的好友代码  |  否  |
 
 :::tip
 如果使用过[绑定 Arcaea 账户](#绑定-arcaea-账户)，则不需要手动指定目标好友代码。
@@ -93,11 +94,11 @@ Arcaea 是 Lowiro 的注册商标。商标是其各自所有者的财产。游�
 ### 命令格式
 
 ```:no-line-numbers
-/arc recent [<usercode>]
+/arc recent [<userCode>]
 ```
 | 参数 |  名称  |  类型  |  描述  |  必要  |
 |:----:|:----:|:----:|:----:|:----:|
-| usercode |  目标好友代码  |  string  |  需要生成最近游玩成绩图的用户的好友代码  |  否  |
+| userCode |  目标好友代码  |  string  |  需要生成最近游玩成绩图的用户的好友代码  |  否  |
 
 :::tip
 如果使用过[绑定 Arcaea 账户](#绑定-arcaea-账户)，则不需要手动指定目标好友代码。
@@ -113,6 +114,7 @@ Arcaea 是 Lowiro 的注册商标。商标是其各自所有者的财产。游�
 
 ```:no-line-numbers
 /arc best <song> [<diff>]
+/arc info <song> [<diff>]
 ```
 | 参数 |  名称  |  类型  |  描述  |  必要  |
 |:----:|:----:|:----:|:----:|:----:|
@@ -126,12 +128,12 @@ Arcaea 是 Lowiro 的注册商标。商标是其各自所有者的财产。游�
 ### 命令格式
 
 ```:no-line-numbers
-/arc chart <song> <diff>
+/arc chart <song> [<diff>]
 ```
 | 参数 |  名称  |  类型  |  描述  |  必要  |
 |:----:|:----:|:----:|:----:|:----:|
 | song |  歌曲名字  |  string  |  可以是歌曲全名、内部sid或别名  |  是  |
-| diff |  难度  |  string  |  必须是 PRS、PST、FTR、BYD 其中之一  |  是  |
+| diff |  难度  |  string  | 必须是 PRS、PST、FTR、BYD 其中之一，留空则为 FTR  |  否  |
 
 ## 歌曲信息
 
@@ -140,9 +142,24 @@ Arcaea 是 Lowiro 的注册商标。商标是其各自所有者的财产。游�
 ### 命令格式
 
 ```:no-line-numbers
-/arc info <song>
 /arc song <song>
+/arc const <song>
 ```
 | 参数 |  名称  |  类型  |  描述  |  必要  |
 |:----:|:----:|:----:|:----:|:----:|
 | song |  歌曲名字  |  string  |  可以是歌曲全名、内部sid或别名  |  是  |
+
+## 定数计算
+
+计算指定定数在指定成绩下的结果
+
+### 命令格式
+
+```:no-line-numbers
+/arc calc <rating> <score>
+/arc calculate <rating> <score>
+```
+| 参数 |  名称  |  类型  |  描述  |  必要  |
+|:----:|:----:|:----:|:----:|:----:|
+| rating |  定数  |  float  |  要计算的定数  |  是  |
+| score |  成绩  |  int  |  要计算的成绩  |  是  |
