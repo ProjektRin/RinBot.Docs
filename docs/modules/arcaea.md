@@ -1,4 +1,4 @@
-# Arcaea
+# Arcaea <Badge type="tip" text="稳定" vertical="top"/>
 
 提供各项和 Arcaea 相关的工具。
 

@@ -1,4 +1,4 @@
-# Apex Legends
+# Apex Legends <Badge type="tip" text="稳定" vertical="top"/>
 
 提供各项和 Apex Legends 相关的工具。
 

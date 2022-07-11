@@ -1,4 +1,4 @@
-# 核心命令
+# 核心命令 <Badge type="danger" text="开发中" vertical="top"/>
 
 使用和控制 RinBot 的一些基本命令。
 

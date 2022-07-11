@@ -1,9 +1,16 @@
 const { defaultTheme } = require('@vuepress/theme-default')
+const { externalLinkIconPlugin } = require('@vuepress/plugin-external-link-icon')
 
 module.exports = {
     lang: 'zh-CN',
     title: 'RinBot',
     description: '多功能(x) IM 机器人',
+
+    plugins: [
+        externalLinkIconPlugin({
+          // 配置项
+        }),
+      ],
 
     theme: defaultTheme({
         logo: '/images/avatar.jpg',
@@ -11,6 +18,12 @@ module.exports = {
         tip: '提示',
         warning: '注意',
         danger: '警告',
+
+        repo: 'https://github.com/ProjektRin/RinBot',
+
+        editLinkText: '编辑此页',
+        docsBranch: 'master',
+        docsDir: 'docs',
 
         lastUpdated: true,
         lastUpdatedText: '最近更新',

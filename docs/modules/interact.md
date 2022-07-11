@@ -1,4 +1,4 @@
-# 互动
+# 互动 <Badge type="danger" text="开发中" vertical="top"/>
 
 各种和 RinBot 相关的互动
 

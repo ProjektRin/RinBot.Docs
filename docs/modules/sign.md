@@ -1,4 +1,4 @@
-# 签到
+# 签到 <Badge type="danger" text="开发中" vertical="top"/>
 
 提供签到功能。
 
