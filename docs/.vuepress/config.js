@@ -1,16 +1,10 @@
 const { defaultTheme } = require('@vuepress/theme-default')
-const { externalLinkIconPlugin } = require('@vuepress/plugin-external-link-icon')
 
 module.exports = {
     lang: 'zh-CN',
     title: 'RinBot',
     description: '多功能(x) IM 机器人',
-
-    plugins: [
-        externalLinkIconPlugin({
-          // 配置项
-        }),
-      ],
+    base: '/docs.RinBot/',
 
     theme: defaultTheme({
         logo: '/images/avatar.jpg',
