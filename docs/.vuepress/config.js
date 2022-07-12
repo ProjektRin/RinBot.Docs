@@ -4,7 +4,7 @@ module.exports = {
     lang: 'zh-CN',
     title: 'RinBot',
     description: '多功能(x) IM 机器人',
-    base: '/docs.RinBot/',
+    base: '/RinBot.Docs/',
 
     theme: defaultTheme({
         logo: '/images/avatar.jpg',
@@ -16,6 +16,7 @@ module.exports = {
         repo: 'https://github.com/ProjektRin/RinBot',
 
         editLinkText: '编辑此页',
+        docsRepo: 'https://github.com/ProjektRin/RinBot.Docs',
         docsBranch: 'master',
         docsDir: 'docs',
 
