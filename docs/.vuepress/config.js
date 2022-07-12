@@ -4,7 +4,7 @@ module.exports = {
     lang: 'zh-CN',
     title: 'RinBot',
     description: '多功能(x) IM 机器人',
-    base: '/RinBot.Docs/',
+    //base: '/RinBot.Docs/',
 
     theme: defaultTheme({
         logo: '/images/avatar.jpg',
