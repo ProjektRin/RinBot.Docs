@@ -1,1 +1,0 @@
-const t={key:"v-8daa1a0e",path:"/",title:"RinBot",lang:"zh-CN",frontmatter:{lang:"zh-CN",home:!0,title:"RinBot",description:"\u591A\u529F\u80FD(?)QQ\u673A\u5668\u4EBA",heroImage:"/images/avatar.jpg"},excerpt:"",headers:[],git:{updatedTime:1657516541e3,contributors:[{name:"AkulaKirov",email:"photonspk@gmail.com",commits:1}]},filePathRelative:"README.md"};export{t as data};
