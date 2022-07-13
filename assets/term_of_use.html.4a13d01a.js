@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3e88deb3","path":"/guide/term_of_use.html","title":"RinBot \u4F7F\u7528\u6761\u4F8B","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657739414000,"contributors":[{"name":"AkulaKirov","email":"photonspk@gmail.com","commits":1}]},"filePathRelative":"guide/term_of_use.md"}');export{e as data};
