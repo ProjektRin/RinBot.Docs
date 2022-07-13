@@ -1,10 +1,41 @@
-const { defaultTheme } = require('@vuepress/theme-default')
+import { defineUserConfig } from '@vuepress/cli'
+import { defaultTheme } from '@vuepress/theme-default'
 
-module.exports = {
+import { viteBundler } from '@vuepress/bundler-vite'
+
+import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
+import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
+import { containerPlugin } from '@vuepress/plugin-container'
+import { nprogressPlugin } from '@vuepress/plugin-nprogress'
+
+export default defineUserConfig({
     lang: 'zh-CN',
     title: 'RinBot',
     description: '多功能(x) IM 机器人',
     //base: '/RinBot.Docs/',
+
+    plugins: [
+        backToTopPlugin(),
+        nprogressPlugin(),
+        mediumZoomPlugin({
+            // options
+        }),
+        containerPlugin({
+            type: 'slot',
+            before: (info: string): string => "<div class=\"footer content__footer\"><p>",
+            after: (): string => '</p></div>\n'
+        }),
+    ],
+
+    bundler: viteBundler({
+        viteOptions: {
+            // @ts-expect-error: vite does not provide types for ssr options yet
+            ssr: {
+                //noExternal: ['wow.js'],
+            },
+        },
+        vuePluginOptions: {},
+    }),
 
     theme: defaultTheme({
         logo: '/images/avatar.jpg',
@@ -45,16 +76,17 @@ module.exports = {
         sidebar: {
             '/guide/': [{
                 text: '简介',
-                collapsable: true,
+                //collapsable: true,
                 children: [
                     '/guide/',
                     '/guide/command',
+                    '/guide/term_of_use',
                     '/guide/about'
                 ]
             }, ],
             '/modules/': [{
                 text: '模块',
-                collapsable: true,
+                //collapsable: true,
                 children: [
                     '/modules/',
                     '/modules/arcaea',
@@ -67,4 +99,4 @@ module.exports = {
         },
         sidebarDepth: 1
     }),
-}
+})

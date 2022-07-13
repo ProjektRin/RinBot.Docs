@@ -68,3 +68,23 @@ RinBot 命令的基本命令格式分为三个部分：
 ```
 
 并不是每个命令都会有其特殊格式，它们可能是某个命令的变体或替代格式，目的是为了简化命令格式，方便调用。
+
+## 使用示例
+
+部分命令中可能会存在类似下图的命令示例图，它将会模拟实际使用场景下 RinBot 的交互和回复。
+
+<ClientOnly>
+    <neko-box :messages="[
+        { position: 'right', msg: '这是一条指令示例' },
+        { position: 'left', msg: '这是bot可能的输出结果' },
+        { position: 'right', msg: '这又是一条指令示例' },
+        { position: 'left', chain: [{ reply: '这又是一条指令示例' }, { msg: '这是bot可能的回复' }] },
+        { position: 'center', msg: '你 👉戳了戳 铃酱' },
+        { position: 'left', msg: '这是bot对戳一戳事件可能的输出' },
+        { position: 'right', msg: '这是可能产生复杂输出的指令' },
+        { position: 'left', chain: [{ reply: '这是可能产生复杂输出的指令' }, { at: '@user' }, { img: '/images/example_1.gif' }, { msg: '谔谔' }] },
+    ]">
+    </neko-box>
+</ClientOnly>
+
+> 该组件使用了由 [InariAimu](https://github.com/InariAimu) 提供的 [NekoBox.vue](https://github.com/InariAimu/AimuBot.Docs/blob/main/docs/.vuepress/components/NekoBox.vue).

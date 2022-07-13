@@ -25,7 +25,7 @@ RinBot 的编写过程中受到许多人的启发和支持，没有他们就没�
 - [Arcaea-Infinity](https://github.com/Arcaea-Infinity) 提供了 ArcaeaUnlimitedAPI、以及让我接触其他开发者的平台
 
 项目：
-- [InariAimu/AimuBot](https://github.com/InariAimu/AimuBot) 新型多 IM 平台框架的灵感和实现参考
+- [InariAimu/AimuBot](https://github.com/InariAimu/AimuBot) 新型多 IM 平台框架的灵感和实现参考，以及本文档的使用示例组件来源 [NekoBox.vue](https://github.com/InariAimu/AimuBot.Docs/blob/main/docs/.vuepress/components/NekoBox.vue)
 
 还有：
 - 各位用户 也就是**您**
