@@ -140,8 +140,8 @@ Arcaea 是 Lowiro 的注册商标。商标是其各自所有者的财产。游�
 
 <ClientOnly>
     <neko-box :messages="[
-        { position: 'right', msg: '/a b30' },
-        { position: 'left', chain: [{ reply: '/a b30' }, { msg: '[Arcaea]Recent' }, { img: '/images/arcaea/recent.jpg' }] }
+        { position: 'right', msg: '/a recent' },
+        { position: 'left', chain: [{ reply: '/a recent' }, { msg: '[Arcaea]Recent' }, { img: '/images/arcaea/recent.jpg' }] }
     ]">
     </neko-box>
 </ClientOnly>
