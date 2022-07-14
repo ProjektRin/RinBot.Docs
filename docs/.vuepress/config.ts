@@ -80,7 +80,7 @@ export default defineUserConfig({
                 children: [
                     '/guide/',
                     '/guide/command',
-                    '/guide/term_of_use',
+                    '/guide/term_of_service',
                     '/guide/about'
                 ]
             }, ],
