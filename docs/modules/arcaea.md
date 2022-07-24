@@ -163,7 +163,7 @@ Arcaea 是 Lowiro 的注册商标。商标是其各自所有者的财产。游�
 | 参数 |  名称  |  类型  |  描述  |  必要  |
 |:----:|:----:|:----:|:----:|:----:|
 | song |  歌曲名字  |  string  |  可以是歌曲全名、内部sid或别名  |  是  |
-| diff |  难度  |  string  |  必须是 PRS、PST、FTR、BYD 其中之一，留空则为游玩过的最高难度  |  否  |
+| diff |  难度  |  string  |  必须是 PRS、PST、FTR、BYD 其中之一，留空则为 FTR  |  否  |
 
 <ClientOnly>
     <neko-box :messages="[
